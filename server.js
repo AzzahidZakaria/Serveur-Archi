@@ -14,7 +14,7 @@ let todo = ["Faire les courses","Nourir le chat"];
 //});
 
 
-
+//
  //using url
 app.get('/index',(request,response) => {
         //response.send('Bonjour' + request.query.name);
