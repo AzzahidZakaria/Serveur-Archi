@@ -1,0 +1,35 @@
+
+<html >
+<head>
+  
+  <title>Exercice numéro 1</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+    <body>
+        <h1>ToDo</h1>
+        <ul>
+          <% for (let i = 0; i < todo.length; i++) { %>
+            
+            <li> <%= todo[i] %> <a href="/remove/<%= i %> "> Delete </a> </li>
+           <%  } %>
+
+
+           <br>
+           <%= messageConfirm %>
+
+           <form method="GET" action="/ajouter/">
+            <p><input name="todo"  type="text" value="" /> </p> 
+            <input type="submit" />
+          </form>
+
+        
+          
+             
+
+        </ul>
+
+        
+    </body>
+</html>  
+
+
