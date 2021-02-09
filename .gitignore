@@ -1,4 +1,4 @@
 /node_modules
 /package-lock.json
-/server2.js
-/home2.ejs
+/server.js
+/home.ejs

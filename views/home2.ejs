@@ -1,0 +1,40 @@
+<html >
+<head>
+  
+  <title>Exercice numéro 1</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+    <body>
+        <h1>Exercice todo avec la méthode Post</h1>
+        
+          
+
+          <ul>
+            
+            
+            <% for( var i = 0; i < todo.length; i++){ %>
+          
+              <li> <%= todo[i] %> <a href="/remove/<%= i %> "> Delete </a> </li>
+           <%  } %>
+          </ul>
+            </br>
+
+           <form method="POST" action="/ajouter">
+            <label for=""> Ajouter un todo :</label>
+            <input name="todo"  type="text" value="" />  
+          
+            <input type="submit" value="Envoyer"/>
+          </form>
+        </br>
+          <p> <%= messageConfirm %> </p>
+
+          <!-- <form method="POST" action="/exemple">
+            <label for=""> Ajouter un todo :</label>
+            <input name="test"  type="text" value="" />  
+          
+            <input type="submit" value="Envoyer"/>
+          </form> -->
+
+        
+    </body>
+</html>  
